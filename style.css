@@ -1,0 +1,70 @@
+/* style.css */
+
+/* Фоновая анимация градиента */
+body {
+    background: linear-gradient(270deg, #ffb3ba, #ffdfba, #ffffba, #baffc9, #bae1ff);
+    background-size: 1000% 1000%;
+    animation: gradientAnimation 15s ease infinite;
+    font-family: Arial, sans-serif;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Стили для заголовка и анимации при наведении */
+h1:hover {
+    color: #ff6347;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+/* Анимация для изображений при наведении */
+img:hover {
+    transform: scale(1.1) rotate(10deg);
+    transition: 0.3s;
+}
+
+/* Стили навигационного меню */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff6347;
+    text-decoration: underline;
+}
+
+/* Параллакс-эффект */
+.parallax {
+    background-image: url('background.jpg');
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Стили кнопки "Наверх" */
+button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}

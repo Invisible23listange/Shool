@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <title>for the cool ones</title>
+    <meta charset="UTF-8">
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Фоновая музыка -->
+    <audio autoplay loop>
+        <source src="background-music.mp3" type="audio/mpeg">
+    </audio>
+
+    <div>
+        <h1><center><i><font color="black">Tropical adventures and fruits</font></i></center></h1>
+    </div>
+
+    <header>
+        <h1>Something interesting – Romance</h1>
+        <h2>Boring life – </h2>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" title="Главная страница">Home</a></li>
+            <li><a href="info.html" title="О нас">About</a></li>
+            <li><a href="gallery.html" title="Наши работы">Gallery</a></li>
+            <li><a href="form.html" title="Связаться с нами">Contacts</a></li>
+        </ul>
+    </nav>
+
+    <p>Ласкаво просимо на наш сайт! Тут ви знайдете цікаву інформацію про нас і наші послуги.</p>
+    <p>Ми пропонуємо різноманітні послуги, щоб задовольнити ваші потреби. Залишайтеся з нами!</p>
+    <p>Дякуємо, що завітали!</p>
+
+    <!-- Параллакс-эффект -->
+    <div class="parallax"></div>
+
+    <!-- Добавляем GIF NyanCat -->
+    <div style="text-align: center; margin: 20px 0;">
+        <img src="NyanCat.gif" alt="Nyan Cat GIF">
+    </div>
+
+    <!-- Кнопка прокрутки наверх -->
+    <button onclick="scrollToTop()">⬆️ Наверх</button>
+
+    <footer>
+        <p>HELLO WORLD</p>
+    </footer>
+
+    <script>
+        // Скрипт для плавной прокрутки наверх
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
